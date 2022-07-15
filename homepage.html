@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            This is the title!
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+        </style>
+    </head>
+    <body>
+        <h1>
+            This is header 1
+        </h1>
+        <div style="width:  ;">
+            This is div section!
+        </div>
+        <h2 style="width: 500px;">
+            This is header 2
+        </h2>
+        <h3 id="header3">
+            This is another header
+        </h3>
+        <p style="color: purple;">
+            This is a paragraph
+        </p>
+        
+        <table>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+        </table>
+
+            <img src="https://i.kym-cdn.com/entries/icons/original/000/028/727/Screen_Shot_2019-02-26_at_3.38.50_PM.png" alt="Scheming Racoon">
+        <p>
+            This is a second paragraph that <br/> uses the bracket HTML tag
+        </p>
+        <button id="btn" onclick="showAlert()">
+            This is a button
+        </button>
+        <script>
+            // Showing alert on click!
+            /*
+            first line comment
+            second line comment
+            etc...
+            */
+            function showAlert()
+            {
+                // alert("Hi, you just clickded the button!")
+                var heading3 = document.getElementById("header3");
+                heading3.style.color = "red";
+            }
+        </script>
+    </body>
+</html>
