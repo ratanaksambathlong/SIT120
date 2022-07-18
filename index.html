@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <title>
             This is the title!
         </title>
@@ -9,6 +12,7 @@
         </style>
     </head>
     <body>
+        <center>
         <h1>
             This is header 1
         </h1>
@@ -25,7 +29,7 @@
             This is a paragraph
         </p>
         
-        <table>
+        <table class="center" border="1">
             <tr>
               <th>Table Header 1</th>
               <th>Table Header 2</th>
@@ -42,15 +46,30 @@
               <td>Table Data Row 2</td>
             </tr>
         </table>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <a href="https://knowyourmeme.com/memes/evil-plotting-raccoon">Link</a> <br/>
-
-            <img src="https://i.kym-cdn.com/entries/icons/original/000/028/727/Screen_Shot_2019-02-26_at_3.38.50_PM.png" alt="Scheming Racoon">
+        <img src="https://i.kym-cdn.com/entries/icons/original/000/028/727/Screen_Shot_2019-02-26_at_3.38.50_PM.png" alt="Scheming Racoon" align="center">
         <p>
             This is a second paragraph that <br/> uses the bracket HTML tag
         </p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <button id="btn" onclick="showAlert()">
             This is a button
         </button>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <button onclick="document.getElementById('date').innerHTML = Date()">
+            Check Date & Time
+        </button>
+        <p id="date"></p>
         <script>
             // Showing alert on click!
             /*
@@ -60,10 +79,11 @@
             */
             function showAlert()
             {
-                // alert("Hi, you just clicked the button!")
+                alert("One of the text's color has change :D")
                 var heading3 = document.getElementById("header3");
                 heading3.style.color = "red";
             }
         </script>
+        </center>
     </body>
 </html>
