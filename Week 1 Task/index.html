@@ -3,30 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-        <title>
-            This is the title!
-        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
+        <title>
+            SIT120
+        </title>
         <style>
         </style>
     </head>
     <body>
         <center>
-        <h1>
-            This is header 1
+        <h1 style="color: brown;">
+            SIT120 Week 1 Task
         </h1>
-        <div style="width:  100px;">
-            This is div section!
-        </div>
-        <h2 style="width: 100px;">
-            This is header 2
+        <h2 style="color: purple;">
+            HTML, CSS, JavaScript, Vue.js
         </h2>
         <h3 id="header3">
-            This is another header
+            This text will change color if a button is clicked.
         </h3>
-        <p style="color: purple;">
-            This is a paragraph
+        <p>
+            Raccoons are omnivores and opportunistic eaters, which means they feed on whatever is most convenient.<br/>
+            Their meals can include nuts, berries, fruits, acorns, grasshoppers, mice, fish, frogs, insects, small mammals, and ground-dwelling birds and their eggs.<br/>
+            Raccoons are also adept scavengers.<br/>
+            They rummage through garbage cans and compost piles and steal pet food that is left outside overnight. They climb bird feeders and dine on birdseed, as well.<br/>
         </p>
         
         <table class="center" border="1">
@@ -50,7 +52,7 @@
         <br/>
         <br/>
         <br/>
-        <a href="https://knowyourmeme.com/memes/evil-plotting-raccoon">Link</a> <br/>
+        <a href="https://knowyourmeme.com/memes/evil-plotting-raccoon">Click this link (knowyourmeme.com)</a> <br/>
         <img src="https://i.kym-cdn.com/entries/icons/original/000/028/727/Screen_Shot_2019-02-26_at_3.38.50_PM.png" alt="Scheming Racoon" align="center">
         <p>
             This is a second paragraph that <br/> uses the bracket HTML tag
@@ -60,7 +62,7 @@
         <br/>
         <br/>
         <button id="btn" onclick="showAlert()">
-            This is a button
+            Click this button to change on of the Text's color.
         </button>
         <br/>
         <br/>
@@ -71,19 +73,24 @@
         </button>
         <p id="date"></p>
         <script>
-            // Showing alert on click!
-            /*
-            first line comment
-            second line comment
-            etc...
-            */
             function showAlert()
             {
-                alert("One of the text's color has change :D")
+                alert("One of the text's color has change after clicking OK")
                 var heading3 = document.getElementById("header3");
                 heading3.style.color = "red";
             }
         </script>
-        </center>
+        <div id="todo-app">
+            <h1>To Do:</h1>
+            <ol>
+                <todo-item 
+                    v-for="item in toDoList" 
+                    v-bind:todo="item" 
+                    v-bind:key="item.id"
+                    :class="{ 'task-complete': item.complete }"
+                ></todo-item>
+            </ol>
+        </div>
+          </center>
     </body>
 </html>
