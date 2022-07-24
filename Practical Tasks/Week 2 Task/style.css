@@ -1,0 +1,87 @@
+body {
+    background-color: whitesmoke;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 18pt;
+    margin: 0px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+#main-header {
+    background-color: #127369;
+    color: white;
+}
+#navbar {
+    background-color: #BFBFBF;
+    color: white;
+}
+#navbar li {
+    display: inline;
+}
+#navbar a {
+    color: #10403B;
+    font-weight: bold;    
+}
+#showcase {
+    background-position: center;
+    background-image: url(../Week\ 2\ Task/image/img1.jpg);
+    background-size: 100%;
+    min-height: 300px;
+    text-align: center;
+    color: white;
+    font-size: 200%;
+}
+#showcase-about {
+    background-color: #333;
+    background-position: center;
+    background-size: 100%;
+    min-height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 100%;
+}
+#showcase h1 {
+    color: white;
+    font-size: 50px;
+    line-height: 50px;
+}
+#main{
+    float: left;
+    width: 70%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+#main-about{
+    float: middle;
+    padding: 50px;
+    box-sizing: border-box;
+}
+#sidebar {
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#main-footer{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+}
+@media(max-width: 600px){
+    #main{
+        width: 100%;
+        float: none;
+    }
+    #sidebar{
+        width: 100%;
+        float: none;
+    }
+}
