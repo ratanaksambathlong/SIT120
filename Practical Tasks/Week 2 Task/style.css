@@ -21,6 +21,7 @@ body {
 }
 #navbar li {
     display: inline;
+    padding: 10px;
 }
 #navbar a {
     color: #10403B;
@@ -68,6 +69,26 @@ body {
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
+}
+#youtube-vid{
+    padding: 10px;
+}
+#google-maps {
+    padding: 10px;
+}
+#app {
+    padding: 40px;
+    background-color: #10403B;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#app p {
+    font-size: xx-large;
+}
+#buttons {
+    padding: 20px;
 }
 #main-footer{
     background-color: #333;
