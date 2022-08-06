@@ -12,7 +12,7 @@ body {
     overflow: hidden;
 }
 #main-header {
-    background-color: #127369;
+    background-color: hsl(174, 73%, 26%);
     color: white;
 }
 #navbar {

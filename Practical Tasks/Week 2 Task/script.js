@@ -8,3 +8,11 @@ let vue = new Vue({
         ],
     },
 });
+
+function carTypes (name) {
+    if (name = 'Honda') {
+        return name;    
+    } else {
+        return "Sorry we don't sell" + name + ".";
+    }
+}
