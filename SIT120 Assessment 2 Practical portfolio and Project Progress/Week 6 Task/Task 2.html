@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF=8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIT120</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <input type="checkbox" id="checkbox" v-model="checked" />
+        <label for="checkbox">{{checked}}</label>
+        <br>
+        <br>
+        <input type="checkbox" id="kyle" value="Kyle" v-model="checkedNames" />
+        <label for="kyle">Klye</label>
+        <input type="checkbox" id="laura" value="Laura" v-model="checkedNames" />
+        <label for="laura">Laura</label>
+        <input type="checkbox" id="nicole" value="'Nicole" v-model="checkedNames" />
+        <label for="nicole">Nicole</label>
+        <br>
+        <br>
+        <span>Checked names: {{checkedNames}}</span>
+        <br>
+        <br>
+        <button>Confirm Selection</button>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+    var app = new Vue({
+        el: "#app",
+        data: {
+            message: "Hello Vue!",
+            checked: false,
+            checkedNames: [],
+        },
+    });
+</script>
