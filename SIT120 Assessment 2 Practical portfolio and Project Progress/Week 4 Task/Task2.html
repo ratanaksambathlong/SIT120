@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIT120</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ message }}</h1>
+    </div>
+
+    <script>
+        var vue1 = new Vue({
+            el: "#app",
+            data: {
+                message: "Week 4 task 2"
+            }
+        })
+    </script>
+
+    <!-- v-if  -->
+    <div id="app2">
+        <p v-if="ifTrue">this line shows if the condition is set to true</p>
+    </div>
+
+    <script>
+        var vue2 = new Vue({
+            el: "#app2",
+            data: {
+                ifTrue: true
+            }
+        })
+    </script>
+
+    <!-- v-else  -->
+    <div id="app3">
+        <p v-if="ifTrue">this line shows if the condition is set to true</p>
+        <p v-else>this line shows if the condition is set to false</p>
+    </div>
+
+    <script>
+        var vue3 = new Vue({
+            el: "#app3",
+            data: {
+                ifTrue: false
+            }
+        })
+    </script>
+
+    <!-- v-show  -->
+    <div id="app4">
+        <p v-show="show">this line is rendered using v-show</p>
+    </div>
+
+    <script>
+        var vue3 = new Vue({
+            el: "#app4",
+            data: {
+                show: true
+            }
+        })
+    </script>
+
+    <!-- v-for  -->
+    <div id="app5">
+        <p v-for="fruit in fruit">
+            fruit: {{fruit}}
+        </p>
+        <p v-for="assignment in dueTomorrowAssignments" :key="assignment.id">
+            upcoming: {{assignment.name}}
+        </p>
+    </div>
+
+    <script>
+        var vue5 = new Vue({
+            el: "#app5",
+            data: {
+                fruit: [
+                    "banana", "orange", "apple", "grape"
+                ],
+                assignment: [
+                    {
+                        name: "assignment 1",
+                        dueTomorrow: false,
+                        id: 1,
+                    },
+                    {
+                        name: "assignment 2",
+                        dueTomorrow: true,
+                        id: 2,
+                    },
+                    {
+                        name: "assignment 3",
+                        dueTomorrow: true,
+                        id: 3,
+                    },
+                ]
+            },
+            computed: {
+                dueTomorrowAssignments(){
+                    return this.assignment.filter((assignment)=>assignment.dueTomorrow)
+                }
+            }
+            })
+    </script>
+</body>
+</html>
