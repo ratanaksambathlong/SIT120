@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="fav.html">Favorites</a>
+    <a class="current" href="profile.html">Profile</a>
+    <a href="login.html">Login</a>
+    <a href="settings.html">Settings</a>
+    <a href="about.html">About</a>
+    <a href="join.html">Join</a>
+</div>
+<body>
+<center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <figure>
+        <img src="https://cdn-icons-png.flaticon.com/512/2102/2102647.png" alt="placeholderLogo" style="width:100px;height:100px;" class="placeholderLogo">
+    </figure>
+
+
+
+        <p2>Update your profile here.</p2><br><br>
+
+    <div id="app"> 
+        <p2>Change Phone Number</p2><br><br>
+        <input v-model="phoneNum" type="tel" placeholder="Please enter your phone number" /><br><br>
+        <p2>Change Password</p2><br><br>
+        <input v-model="password" placeholder="Please enter your password"/><br><br>
+        <button type="button" class="button">Confirm</button>
+    </div>
+</center>
+</body>
+</html>
+<script src="script.js"></script>

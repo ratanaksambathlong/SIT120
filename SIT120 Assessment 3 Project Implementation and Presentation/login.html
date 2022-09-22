@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="fav.html">Favorites</a>
+    <a href="profile.html">Profile</a>
+    <a class="current" href="login.html">Login</a>
+    <a href="settings.html">Settings</a>
+    <a href="about.html">About</a>
+    <a href="join.html">Join</a>
+</div>
+
+<center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="app">
+        <p2>Username</p2><br><br>
+        <input v-model="text" placeholder="Please enter your name" /><br><br><br><br>
+        <p2>Password</p2><br><br>
+        <input v-model="password" placeholder="Please enter your password" /><br><br><br><br>
+        <button type="button" class="button">Enter</button>
+    </div>
+</center>
+</body>
+</html>
+<script src="script.js"></script>
