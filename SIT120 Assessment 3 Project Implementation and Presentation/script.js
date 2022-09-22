@@ -14,6 +14,6 @@ if (bgChoice != null) {
   bgSave(bgChoice);
 }
 
-function resetAllToDefault() {
+function resetDefault() {
   bgSave("#d5dce2");
 }
